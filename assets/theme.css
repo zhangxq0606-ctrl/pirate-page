@@ -21,3 +21,16 @@ body[data-theme="day"] .hero-chart:after{left:28px;right:28px;top:auto;bottom:58
 body[data-theme="day"] .chart-grid.grid-a{width:112px;top:143px;left:46px;background:rgba(10,61,112,.16)}
 body[data-theme="day"] .chart-grid.grid-b{display:none}
 body[data-theme="day"] .day-boat{display:block}
+
+/* Day chart follows the same headline baseline as the night porthole. */
+body[data-theme="day"]:before{opacity:.07}
+body[data-theme="day"] .hero{align-items:start}
+body[data-theme="day"] .hero-chart{display:block;height:430px;align-self:start;margin-top:77px;background:linear-gradient(140deg,rgba(255,255,255,.7),rgba(194,226,234,.74));box-shadow:0 24px 54px rgba(28,94,124,.15)}
+body[data-theme="day"] .night-porthole{display:none}
+body[data-theme="day"] [data-theme-copy="night"]{display:none}
+body[data-theme="day"] [data-theme-copy="day"]{display:inline}
+body[data-theme="day"] .manifest-link{border-top-color:rgba(10,61,112,.25);border-bottom-color:rgba(10,61,112,.18);color:var(--ink)}
+body[data-theme="day"] .manifest-link span{color:var(--teal)}
+body[data-theme="day"] .manifest-link b{color:var(--coral)}
+body[data-theme="day"] .manifest-link:hover{border-color:var(--coral);color:var(--teal)}
+@media(max-width:760px){body[data-theme="day"] .hero-chart{height:310px;margin-top:34px}}
