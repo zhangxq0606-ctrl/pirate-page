@@ -1,4 +1,4 @@
-﻿/* Night sail: the default theme and shared site chrome. */
+/* Night sail: the default theme and shared site chrome. */
 :root {
   --ink: #f5dfad;
   --paper: #030917;
@@ -32,11 +32,12 @@ nav { font-family: var(--chart); font-size: 11px; letter-spacing: .08em; }
 .hero-copy-block { position: relative; z-index: 1; min-width: 0; padding-top: 2px; }
 .hero .eyebrow { margin: 0; }
 .hero-kicker { max-width: 470px; margin: 16px 0 12px; color: rgba(155,183,212,.96); font-size: 16px; line-height: 1.55; }
-.hero h1 { max-width: 620px; margin: 0; color: var(--moon); font-size: clamp(52px,4.8vw,74px); line-height: 1.06; letter-spacing: -.055em; text-shadow: 0 7px 24px rgba(0,0,0,.36); }
+.hero h1 { max-width: 590px; margin: 0; color: var(--moon); font-size: clamp(52px,4.45vw,68px); line-height: 1.08; letter-spacing: -.055em; text-shadow: 0 7px 24px rgba(0,0,0,.36); }
 .hero h1 em { color: var(--orange); font-style: normal; text-shadow: 0 0 20px rgba(217,173,85,.17); }
 .hero-title .theme-view { width: 100%; }
-.hero-copy { max-width: 430px; margin: 20px 0 0; color: rgba(226,237,250,.74); font-size: 15px; line-height: 1.78; }
-.boarding-pass { position: relative; display: inline-grid; grid-template-columns: auto 24px; align-items: center; column-gap: 22px; width: min(100%,252px); margin-top: 22px; padding: 10px 13px 10px 15px; border: 1px solid rgba(217,173,85,.72); background: linear-gradient(90deg,rgba(217,173,85,.13),rgba(217,173,85,.025)); color: var(--moon); font-family: var(--chart); transition: transform .2s,background .2s,border-color .2s; }
+.hero-action { display: grid; justify-items: start; gap: 14px; max-width: 430px; margin-top: 18px; padding-left: 15px; border-left: 1px solid rgba(72,189,208,.34); }
+.hero-copy { margin: 0; color: rgba(226,237,250,.74); font-size: 15px; line-height: 1.78; }
+.boarding-pass { position: relative; display: inline-grid; grid-template-columns: auto 21px; align-items: center; column-gap: 16px; width: min(100%,236px); margin-top: 0; padding: 8px 11px 8px 12px; border: 1px solid rgba(217,173,85,.72); background: linear-gradient(90deg,rgba(217,173,85,.13),rgba(217,173,85,.025)); color: var(--moon); font-family: var(--chart); transition: transform .2s,background .2s,border-color .2s; }
 .boarding-pass::before { content: 'PORT ENTRY / 01'; grid-column: 1; color: var(--teal); font-size: 9px; letter-spacing: .12em; }
 .boarding-pass strong { grid-column: 1; grid-row: 2; font-size: 12px; font-weight: 500; letter-spacing: .04em; }
 .boarding-pass b { grid-column: 2; grid-row: 1 / span 2; color: var(--orange); font-size: 19px; font-weight: 400; }
@@ -74,4 +75,4 @@ footer { max-width: none; padding: 23px max(32px,calc((100vw - 1240px)/2)); bord
 .site-header nav { gap: 18px; }.nav-actions { display: flex; align-items: center; gap: 14px; }.nav-actions > a:not(.button) { border-bottom: 1px solid transparent; color: rgba(255,241,200,.8); }.nav-actions > a:not(.button):hover { color: var(--orange); border-color: var(--orange); }
 
 @media (max-width: 980px) { .hero { grid-template-columns: 1fr; gap: 0; width: min(calc(100% - 48px),720px); padding-top: 62px; }.hero-chart,.night-porthole { max-width: 590px; height: 390px; margin-top: 34px; }.manifest-gateway { width: min(calc(100% - 48px),720px); } }
-@media (max-width: 760px) { .site-header,footer { padding-right: 20px; padding-left: 20px; }.site-header nav { gap: 10px; }.nav-actions { gap: 10px; }.nav-actions .button-small { padding: 7px 9px; font-size: 11px; }.nav-actions > a:not(.button) { display: none; }.hero { width: calc(100% - 40px); min-height: 0; padding: 52px 0 48px; }.hero-kicker { margin: 14px 0 10px; font-size: 15px; }.hero h1 { font-size: clamp(44px,13vw,62px); }.hero-copy { font-size: 14px; line-height: 1.76; }.boarding-pass { margin-top: 20px; }.hero-chart,.night-porthole { height: 320px; margin-top: 30px; }.night-porthole::before { inset: 24px 28px 48px; }.manifest-gateway { width: calc(100% - 40px); padding-bottom: 56px; }.manifest-link { padding: 20px 0; }.manifest-link strong { font-size: 15px; }.works-section { padding-top: 62px; }.works-section::before { right: 20px; }.detail-page,.admin-page,.form-page { padding-right: 20px; padding-left: 20px; } }
+@media (max-width: 760px) { .site-header,footer { padding-right: 20px; padding-left: 20px; }.site-header nav { gap: 10px; }.nav-actions { gap: 10px; }.nav-actions .button-small { padding: 7px 9px; font-size: 11px; }.nav-actions > a:not(.button) { display: none; }.hero { width: calc(100% - 40px); min-height: 0; padding: 52px 0 48px; }.hero-kicker { margin: 14px 0 10px; font-size: 15px; }.hero h1 { font-size: clamp(44px,13vw,62px); }.hero-action { gap: 12px; margin-top: 16px; padding-left: 12px; }.hero-copy { font-size: 14px; line-height: 1.76; }.hero-chart,.night-porthole { height: 320px; margin-top: 30px; }.night-porthole::before { inset: 24px 28px 48px; }.manifest-gateway { width: calc(100% - 40px); padding-bottom: 56px; }.manifest-link { padding: 20px 0; }.manifest-link strong { font-size: 15px; }.works-section { padding-top: 62px; }.works-section::before { right: 20px; }.detail-page,.admin-page,.form-page { padding-right: 20px; padding-left: 20px; } }
