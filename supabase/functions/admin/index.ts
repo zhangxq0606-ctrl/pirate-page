@@ -20,7 +20,7 @@ Deno.serve(async request => {
     if (body.action === 'review') {
       if (!['approved', 'rejected'].includes(body.status) || !body.id) return Response.json({ error: '审核参数不完整。' }, { status: 400, headers: corsHeaders });
       if (body.status === 'rejected' && !String(body.review_note || '').trim()) return Response.json({ error: '驳回时需要填写理由。' }, { status: 400, headers: corsHeaders });
-      const { error } = await admin.from('works').update({ status: body.status, tags: Array.isArray(body.tags) ? body.tags : [], review_note: body.status === 'rejected' ? String(body.review_note).trim() : null }).eq('id', body.id);
+      const { error } = await admin.from('works').update({ status: body.status, review_note: body.status === 'rejected' ? String(body.review_note).trim() : null }).eq('id', body.id);
       if (error) throw error;
       return Response.json({ ok: true }, { headers: corsHeaders });
     }
