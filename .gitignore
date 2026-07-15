@@ -15,5 +15,6 @@ node_modules/
 *.log
 npm-debug.log*
 
-# Supabase 本地开发（如果以后用）
+# Supabase 本地开发
 .supabase/
+supabase/.temp/

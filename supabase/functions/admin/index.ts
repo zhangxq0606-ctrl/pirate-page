@@ -2,7 +2,7 @@
 // Secrets：supabase secrets set ADMIN_PASSWORD=... SUPABASE_SERVICE_ROLE_KEY=...
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
 
-const corsHeaders = { 'Access-Control-Allow-Origin': 'https://YOUR_DOMAIN', 'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type', 'Content-Type': 'application/json' };
+const corsHeaders = { 'Access-Control-Allow-Origin': 'https://pirate.captainxq.me', 'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type', 'Content-Type': 'application/json' };
 const validStatuses = ['pending', 'approved', 'rejected'];
 
 Deno.serve(async request => {
