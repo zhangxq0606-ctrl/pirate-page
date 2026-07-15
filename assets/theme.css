@@ -115,7 +115,7 @@ body[data-theme="day"] .site-header .nav-actions .button-small { min-height: 42p
   body[data-theme="day"] .site-header .nav-actions { gap: 8px; margin-left: 10px; padding-left: 10px; }
   body[data-theme="day"] .site-header .nav-actions > a:not(.button) { display: none; }
   body[data-theme="day"] .site-header .nav-actions .button-small { min-height: 36px; padding: 0 11px; font-size: 11px; }
-  body[data-page="home"][data-theme="day"] .site-header .nav-actions { display: none; }
+  body[data-page="home"][data-theme="day"] .site-header .nav-actions { display: none !important; }
 }
 @media(max-width:560px) {
   body[data-theme="day"] .site-header .brand { font-size: 0; }
@@ -353,7 +353,7 @@ body[data-page="submit"][data-theme="day"] .site-header{position:relative;width:
 body[data-page="submit"][data-theme="day"] .site-header .brand{color:#082e50;text-shadow:none}body[data-page="submit"][data-theme="day"] .site-header .brand-mark{box-shadow:inset 0 0 0 3px rgba(217,101,87,.09)}body[data-page="submit"][data-theme="day"] .site-header .theme-toggle{border-color:rgba(10,61,112,.26);background:rgba(255,255,255,.46);color:#0a3d70;box-shadow:none;backdrop-filter:none}body[data-page="submit"][data-theme="day"] .site-header .theme-toggle:hover{background:rgba(255,255,255,.8)}body[data-page="submit"][data-theme="day"] .site-header .theme-toggle .theme-option:first-child{color:#0a3d70}body[data-page="submit"][data-theme="day"] .site-header .theme-toggle .theme-option:last-of-type{color:rgba(10,61,112,.58)}body[data-page="submit"][data-theme="day"] .site-header .nav-actions{border-left-color:rgba(10,61,112,.22)}body[data-page="submit"][data-theme="day"] .site-header .nav-actions>a:not(.button){color:#0a3d70;background:rgba(255,255,255,.3);text-shadow:none}
 body[data-page="submit"][data-theme="day"] .form-page{grid-template-columns:minmax(260px,.68fr) minmax(400px,1fr);gap:72px;max-width:1160px;padding:52px 0 82px}body[data-page="submit"][data-theme="day"] .form-intro{padding-top:8px}body[data-page="submit"][data-theme="day"] .form-intro .eyebrow{color:#17718c;font-size:12px}body[data-page="submit"][data-theme="day"] .form-intro h1{color:#082e50;font-size:clamp(48px,5vw,68px);letter-spacing:-.06em}body[data-page="submit"][data-theme="day"] .form-intro p{color:rgba(7,48,79,.76);font-size:15px}body[data-page="submit"][data-theme="day"] .form-note{border-left-color:#087f9b}body[data-page="submit"][data-theme="day"] .work-form{gap:18px;padding:24px;border-color:rgba(10,61,112,.2);border-radius:3px;background:rgba(250,254,253,.76);box-shadow:0 14px 30px rgba(28,94,124,.11)}body[data-page="submit"][data-theme="day"] .tag-option span{border-color:rgba(10,61,112,.2);background:rgba(255,255,255,.55);color:#39759a}body[data-page="submit"][data-theme="day"] .tag-option input:checked+span{border-color:#0a607d;background:#0a607d;color:#f1faf9}body[data-page="submit"][data-theme="day"] .field-help{color:rgba(10,61,112,.62)}
 body[data-page="works"][data-theme="day"] .works-grid{grid-template-columns:repeat(auto-fill,minmax(250px,360px));gap:18px}body[data-page="works"][data-theme="day"] .work-card{max-width:360px}body[data-page="works"][data-theme="day"] .card-content{padding:47px 16px 14px}body[data-page="works"][data-theme="day"] .card-content h3{display:-webkit-box;overflow:hidden;font-size:23px;line-height:1.24;-webkit-box-orient:vertical;-webkit-line-clamp:2}body[data-page="works"][data-theme="day"] .description{margin:8px 0 11px;font-size:14px;line-height:1.62}body[data-page="works"][data-theme="day"] .tags{margin-top:9px}
-@media(max-width:760px){body[data-page="submit"][data-theme="day"] .site-header{padding-right:20px;padding-left:20px}body[data-page="submit"][data-theme="day"] .form-page{grid-template-columns:1fr;gap:30px;width:calc(100% - 40px);padding:38px 0 62px}body[data-page="works"][data-theme="day"] .works-grid{grid-template-columns:1fr;gap:15px}body[data-page="works"][data-theme="day"] .work-card{max-width:none}}
+@media(max-width:760px){body[data-page="submit"][data-theme="day"] .site-header{padding-right:20px;padding-left:20px}body[data-page="submit"][data-theme="day"] .site-header .nav-actions{display:none!important}body[data-page="submit"][data-theme="day"] .form-page{grid-template-columns:1fr;gap:24px;width:calc(100% - 40px);padding:32px 0 62px}body[data-page="submit"][data-theme="day"] .form-intro{padding-top:0}body[data-page="submit"][data-theme="day"] .form-intro .eyebrow{margin:0 0 10px}body[data-page="works"][data-theme="day"] .works-grid{grid-template-columns:1fr;gap:15px}body[data-page="works"][data-theme="day"] .work-card{max-width:none}}
 body[data-page="works"][data-theme="day"]{min-height:100vh;min-height:100svh;display:flex;flex-direction:column}body[data-page="works"][data-theme="day"] .works-main{flex:1 0 auto}
 
 /* Day-sail work log: the cover lives here, not in the manifest. */
@@ -590,7 +590,7 @@ body[data-page="submit"][data-theme="night"] .field-help { color:rgba(166,196,22
 body[data-page="submit"][data-theme="night"] .work-form .button { align-self:flex-start; margin-top:2px; }
 body[data-page="submit"][data-theme="night"] .form-message { color:#72cddd; }
 body[data-page="submit"][data-theme="night"] .form-message.error { color:#ef8d78; }
-@media(max-width:760px) { body[data-page="submit"][data-theme="night"] .form-page { grid-template-columns:1fr; gap:30px; width:calc(100% - 40px); padding:38px 0 62px; }body[data-page="submit"][data-theme="night"] .work-form { padding:20px; } }
+@media(max-width:760px) { body[data-page="submit"][data-theme="night"] .site-header .nav-actions { display:none!important; }body[data-page="submit"][data-theme="night"] .form-page { grid-template-columns:1fr; gap:24px; width:calc(100% - 40px); padding:32px 0 62px; }body[data-page="submit"][data-theme="night"] .form-intro { padding-top:0; }body[data-page="submit"][data-theme="night"] .form-intro .eyebrow { margin:0 0 10px; }body[data-page="submit"][data-theme="night"] .work-form { padding:20px; } }
 
 /* Night work log: cover-led, but the reading route stays primary. */
 body[data-page="work"][data-theme="night"] { min-height:100vh; min-height:100svh; display:flex; flex-direction:column; background:radial-gradient(ellipse 62% 330px at 76% 0,rgba(31,84,130,.26),transparent 72%),linear-gradient(180deg,#091a35 0%,#07152b 46%,#040d1e 100%); }
@@ -648,7 +648,14 @@ body[data-page="home"][data-theme="night"] .hero-copy { max-width:570px; font-si
   body[data-page="home"][data-theme="night"] .hero-cta-row { animation:day-action-arrival .62s .96s cubic-bezier(.22,.8,.24,1) both; }
   body[data-page="home"][data-theme="night"] .hero h1 .theme-view[data-theme-view="night"] { animation:day-title-arrival .78s 1.92s cubic-bezier(.22,.8,.24,1) both; }
 }
-@media(max-width:760px) { body[data-page="home"][data-theme="night"] .hero h1 { max-width:350px; font-size:clamp(50px,13vw,64px); }body[data-page="home"][data-theme="night"] .hero-copy { font-size:15px; line-height:1.76; } }
+@media(max-width:760px) {
+  body[data-page="home"][data-theme="night"] .site-header .nav-actions { display:none !important; }
+  body[data-page="home"][data-theme="night"] .hero-copy-block { padding-top:96px; padding-bottom:40px; }
+  body[data-page="home"][data-theme="night"] .hero-action { gap:10px; margin-top:18px; padding-top:12px; background:linear-gradient(90deg,rgba(3,14,31,.72) 0%,rgba(3,14,31,.54) 68%,rgba(3,14,31,.2) 100%); }
+  body[data-page="home"][data-theme="night"] .hero h1 { max-width:350px; font-size:clamp(50px,13vw,64px); }
+  body[data-page="home"][data-theme="night"] .hero-copy { color:#edf4fa; font-size:15px; line-height:1.76; text-shadow:0 1px 14px rgba(0,0,0,.72); }
+  body[data-page="home"][data-theme="night"] .hero-cta-row { gap:8px; }
+}
 
 /* A user-triggered day/night switch changes the skin without replaying page entrance motion. */
 body[data-theme-motion="switched"] .site-header,
@@ -690,6 +697,33 @@ body[data-page="work"][data-theme="night"] .site-header .nav-actions > a.nav-con
 }
 body[data-theme="day"] :is(a,button,input,textarea,select):focus-visible { outline:2px solid #087f9b; outline-offset:3px; }
 body[data-theme="night"] :is(a,button,input,textarea,select):focus-visible { outline:2px solid #e5b85f; outline-offset:3px; }
+/* Mobile manifest: keep the directory scanable without carrying desktop navigation. */
+@media(max-width:760px) {
+  body[data-page="works"] .site-header .nav-actions { display:none !important; }
+  body[data-page="works"] .works-section { padding-top:28px; padding-bottom:64px; }
+  body[data-page="works"] .works-masthead { gap:24px; }
+  body[data-page="works"] .works-intro .eyebrow { margin-bottom:8px; }
+  body[data-page="works"] .works-lede { margin-top:14px; }
+  body[data-page="works"] .works-index { max-width:none; padding-right:16px; }
+  body[data-page="works"] .works-index::after { right:4px; }
+  body[data-page="works"] .works-route { margin-top:28px; }
+  body[data-page="works"] .tag-filter { display:grid; grid-template-columns:repeat(3,max-content); gap:8px 12px; margin:14px 0 26px; }
+  body[data-page="works"] .tag-filter button { min-height:40px; padding:7px 10px; }
+}
+/* Mobile work log: the page already has a local return route, so keep the reading path clear. */
+@media(max-width:760px) {
+  body[data-page="work"] .site-header .nav-actions { display:none !important; }
+  body[data-page="work"] .detail-page { padding-top:30px; padding-bottom:64px; }
+  body[data-page="work"] .detail-masthead { margin-top:22px; }
+  body[data-page="work"] .detail-title { overflow-wrap:anywhere; }
+  body[data-page="work"] .detail-summary { margin-top:14px; margin-bottom:18px; }
+  body[data-page="work"] .detail-meta { gap:8px 12px; }
+  body[data-page="work"] .detail-cover { margin-top:24px; }
+  body[data-page="work"] .detail-actions { gap:8px; padding-top:14px; }
+  body[data-page="work"] .detail-actions .button,
+  body[data-page="work"] .detail-actions .text-button { min-height:40px; }
+  body[data-page="work"] .journey { margin-top:30px; padding-top:23px; }
+}
 body[data-page="works"] .work-card::after {
   content: '查看航程 →';
   position: absolute;
