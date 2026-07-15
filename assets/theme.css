@@ -115,6 +115,7 @@ body[data-theme="day"] .site-header .nav-actions .button-small { min-height: 42p
   body[data-theme="day"] .site-header .nav-actions { gap: 8px; margin-left: 10px; padding-left: 10px; }
   body[data-theme="day"] .site-header .nav-actions > a:not(.button) { display: none; }
   body[data-theme="day"] .site-header .nav-actions .button-small { min-height: 36px; padding: 0 11px; font-size: 11px; }
+  body[data-page="home"][data-theme="day"] .site-header .nav-actions { display: none; }
 }
 @media(max-width:560px) {
   body[data-theme="day"] .site-header .brand { font-size: 0; }
@@ -164,6 +165,12 @@ body[data-theme="day"] .manifest-gateway { max-width: 1240px; padding-top: 36px;
   body[data-theme="day"] .hero-copy-block { padding-top: 116px; }
   body[data-theme="day"] .hero h1 { font-size: clamp(48px,13vw,62px); }
   body[data-theme="day"] .hero-action { background: linear-gradient(90deg,rgba(232,246,248,.55),rgba(232,246,248,0)); }
+}
+@media(max-width:760px) {
+  body[data-page="home"][data-theme="day"] .hero-copy-block { padding-top: 96px; padding-bottom: 40px; }
+  body[data-page="home"][data-theme="day"] .hero-action { gap: 10px; margin-top: 18px; padding-top: 12px; background: linear-gradient(90deg,rgba(240,250,251,.78) 0%,rgba(240,250,251,.62) 68%,rgba(240,250,251,.24) 100%); }
+  body[data-page="home"][data-theme="day"] .hero-copy { color: #082e50; text-shadow: 0 1px 14px rgba(245,252,253,.9); }
+  body[data-page="home"][data-theme="day"] .hero-cta-row { gap: 8px; }
 }
 
 /* Day home motion: a settled camera and a barely perceptible reflection on the water. */
