@@ -796,3 +796,25 @@ body[data-page="submit"] .tag-option span::before { content:'#'; margin-right:3p
 body[data-page="submit"] .tag-option input:checked + span::after { content:'✓'; margin-left:6px; font-size:11px; font-weight:700; }
 body[data-page="submit"] .tag-option:hover span { transform:translateY(-1px); }
 body[data-page="submit"] .field-help { display:none; }
+
+/* Submission day-sail uses the same compact mobile switcher as night-sail. */
+@media(max-width:760px) {
+  body[data-page="submit"][data-theme="day"] .site-header .theme-toggle { width:94px; height:32px; }
+}
+/* Public mobile route chrome: one day/night navigation and masthead cadence. */
+@media(max-width:760px) {
+  body[data-page="home"] .site-header,
+  body[data-page="works"] .site-header,
+  body[data-page="submit"] .site-header,
+  body[data-page="work"] .site-header { padding:12px 20px; }
+  body[data-page="home"] .site-header .nav-actions,
+  body[data-page="works"] .site-header .nav-actions,
+  body[data-page="submit"] .site-header .nav-actions,
+  body[data-page="work"] .site-header .nav-actions { display:none !important; }
+  body[data-page="home"] .site-header .theme-toggle,
+  body[data-page="works"] .site-header .theme-toggle,
+  body[data-page="submit"] .site-header .theme-toggle,
+  body[data-page="work"] .site-header .theme-toggle { width:94px; height:32px; }
+  body[data-page="works"] .works-section { padding-top:32px; }
+  body[data-page="works"] .works-intro .eyebrow { margin-bottom:10px; }
+}
