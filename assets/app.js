@@ -3,7 +3,7 @@ import { SUPABASE_URL, SUPABASE_ANON_KEY, ADMIN_FUNCTION } from './config.js';
 
 const configured = !SUPABASE_URL.startsWith('YOUR_') && !SUPABASE_ANON_KEY.startsWith('YOUR_');
 const db = configured ? createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
-const roles = ['船长', '大副', '舵手', '领航员', '炮手', '瞭望员', '船医', '水手'];
+const roles = ['大副', '舵手', '领航员', '炮手', '瞭望员', '船医', '水手'];
 const tags = ['网页', '工具', 'AI 应用', '小程序', '脚本', '数据可视化', '游戏', '其他'];
 function initTheme(){if(location.protocol==='file:')return;const apply=theme=>{document.body.dataset.theme=theme;document.querySelectorAll('[data-theme-view]').forEach(view=>{view.hidden=view.dataset.themeView!==theme});document.querySelectorAll('[data-theme-toggle]').forEach(button=>button.setAttribute('aria-label',theme==='day'?'当前日航，切换到夜航主题':'当前夜航，切换到日航主题'))};const saved=localStorage.getItem('pirate-theme-v2');apply(saved==='day'||saved==='night'?saved:(document.body.dataset.theme||'day'));document.querySelectorAll('[data-theme-toggle]').forEach(button=>button.addEventListener('click',()=>{document.body.dataset.themeMotion='switched';const next=document.body.dataset.theme==='day'?'night':'day';localStorage.setItem('pirate-theme-v2',next);apply(next)}))}
 const escapeHtml = value => String(value ?? '').replace(/[&<>'"]/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));

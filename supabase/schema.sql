@@ -5,7 +5,7 @@ create table if not exists public.works (
   title text not null check (char_length(title) between 1 and 60),
   description text not null check (char_length(description) between 1 and 120),
   author_name text not null check (char_length(author_name) between 1 and 30),
-  author_role text not null check (author_role in ('船长','大副','舵手','领航员','炮手','瞭望员','船医','水手')),
+  author_role text not null check (author_role in ('大副','舵手','领航员','炮手','瞭望员','船医','水手')),
   cover_url text not null,
   link text,
   journey_log text not null check (char_length(journey_log) between 1 and 3000),
