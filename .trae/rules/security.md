@@ -1,3 +1,7 @@
+---
+alwaysApply: false
+description: 
+---
 # 安全规则
 
 ## config.js 敏感性

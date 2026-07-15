@@ -168,7 +168,7 @@ body[data-theme="day"] .manifest-gateway { max-width: 1240px; padding-top: 36px;
 }
 @media(max-width:760px) {
   body[data-page="home"][data-theme="day"] .hero-copy-block { padding-top: 96px; padding-bottom: 40px; }
-  body[data-page="home"][data-theme="day"] .hero-action { gap: 10px; margin-top: 18px; padding-top: 12px; background: linear-gradient(90deg,rgba(240,250,251,.78) 0%,rgba(240,250,251,.62) 68%,rgba(240,250,251,.24) 100%); }
+  body[data-page="home"][data-theme="day"] .hero-action { gap: 10px; margin-top: 18px; padding-top: 12px; background: linear-gradient(90deg,rgba(240,250,251,.58) 0%,rgba(240,250,251,.40) 68%,rgba(240,250,251,.12) 100%); }
   body[data-page="home"][data-theme="day"] .hero-copy { color: #082e50; text-shadow: 0 1px 14px rgba(245,252,253,.9); }
   body[data-page="home"][data-theme="day"] .hero-cta-row { gap: 8px; }
 }
@@ -723,6 +723,21 @@ body[data-theme="night"] :is(a,button,input,textarea,select):focus-visible { out
   body[data-page="work"] .detail-actions .button,
   body[data-page="work"] .detail-actions .text-button { min-height:40px; }
   body[data-page="work"] .journey { margin-top:30px; padding-top:23px; }
+}
+/* Public mobile navigation: compact controls without changing the desktop header. */
+@media(max-width:760px) {
+  body[data-page="home"] .site-header,
+  body[data-page="works"] .site-header,
+  body[data-page="submit"] .site-header,
+  body[data-page="work"] .site-header { padding-top:12px; padding-bottom:12px; }
+  body[data-page="home"] .site-header .brand-mark,
+  body[data-page="works"] .site-header .brand-mark,
+  body[data-page="submit"] .site-header .brand-mark,
+  body[data-page="work"] .site-header .brand-mark { flex-basis:26px; width:26px; height:26px; }
+  body[data-page="home"] .site-header .theme-toggle,
+  body[data-page="works"] .site-header .theme-toggle,
+  body[data-page="submit"] .site-header .theme-toggle,
+  body[data-page="work"] .site-header .theme-toggle { width:94px; height:32px; }
 }
 body[data-page="works"] .work-card::after {
   content: '查看航程 →';
