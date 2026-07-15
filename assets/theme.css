@@ -818,3 +818,20 @@ body[data-page="submit"] .field-help { display:none; }
   body[data-page="works"] .works-section { padding-top:32px; }
   body[data-page="works"] .works-intro .eyebrow { margin-bottom:10px; }
 }
+/* Theme-aware public mobile route chrome: overrides page-level day and night dimensions. */
+@media(max-width:760px) {
+  body[data-page="home"][data-theme] .site-header,
+  body[data-page="works"][data-theme] .site-header,
+  body[data-page="submit"][data-theme] .site-header,
+  body[data-page="work"][data-theme] .site-header { padding:12px 20px; }
+  body[data-page="home"][data-theme] .site-header .nav-actions,
+  body[data-page="works"][data-theme] .site-header .nav-actions,
+  body[data-page="submit"][data-theme] .site-header .nav-actions,
+  body[data-page="work"][data-theme] .site-header .nav-actions { display:none !important; }
+  body[data-page="home"][data-theme] .site-header .theme-toggle,
+  body[data-page="works"][data-theme] .site-header .theme-toggle,
+  body[data-page="submit"][data-theme] .site-header .theme-toggle,
+  body[data-page="work"][data-theme] .site-header .theme-toggle { width:94px; height:32px; }
+  body[data-page="works"][data-theme] .works-section { padding-top:32px; }
+  body[data-page="works"][data-theme] .works-intro .eyebrow { margin-bottom:10px; }
+}
