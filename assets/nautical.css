@@ -64,7 +64,7 @@ nav { font-family: var(--chart); font-size: 11px; letter-spacing: .08em; }
 .grid-b { right: 22px; bottom: 92px; width: 152px; height: 1px; transform: rotate(-16deg); }
 .chart-caption { bottom: 21px; left: 25px; margin: 0; padding-left: 11px; border-left: 2px solid var(--orange); color: var(--mist); font: 10px/1.6 var(--chart); letter-spacing: .04em; }
 .chart-caption strong { color: var(--moon); font-size: 11px; font-weight: 500; }
-.day-boat { display: none; }
+
 .manifest-gateway { width: min(calc(100% - 64px),1240px); margin: 0 auto; padding: 0 0 76px; }
 .manifest-link { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 8px; padding: 24px 0; border-top: 1px solid rgba(217,173,85,.42); border-bottom: 1px solid rgba(143,183,220,.2); color: var(--moon); font-family: var(--chart); transition: border-color .2s,color .2s; }
 .manifest-link span { grid-column: 1; color: var(--teal); font-size: 10px; letter-spacing: .14em; }.manifest-link strong { grid-column: 1; font-size: 17px; font-weight: 500; letter-spacing: .03em; }.manifest-link b { grid-column: 2; grid-row: 1 / span 2; color: var(--orange); font-size: 27px; font-weight: 400; }.manifest-link:hover { border-color: var(--orange); color: var(--orange); }
